@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{% block title %} 
+  Prediction Result 
+{% endblock %} 
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+<div class="container">
+    <div class="result-box">
+        <h1>Prediction Result</h1>
+        <h2>{{ prediction }}</h2>
+        <p>{{ explanation }}</p>
+        
+        <!-- Button to go back to input page -->
+        <a href="{{ url_for('user_input') }}" class="btn btn-primary">Make Another Prediction</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: url("back.jpg") no-repeat center center fixed; 
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  max-width: 992px;
+  margin: 5px auto;
+  line-height: 1.5rem;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  margin: 20px 0;
+  margin-top: 50px;
+}
+
+h1 {
+  display: inline-block;
+  width: fit-content;
+  align-self: center;
+  color: #80ffdb; 
+  margin-top: 40px; 
+}
+
+p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Transparent box for the navigation bar */
+.nav-box {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 10px 20px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-top: 40px; 
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+li a {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black; 
+}
+
+li a:hover {
+  text-decoration: underline; 
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li a {
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+.content-box {
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  color: white;
+}
+
+.content-box h2 {
+  margin-bottom: 15px;
+  color: #80ffdb; 
+}
+
+.content-box p {
+  margin-bottom: 20px;
+  text-align: justify;
+  color: white; 
+}

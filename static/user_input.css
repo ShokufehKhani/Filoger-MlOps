@@ -1,0 +1,86 @@
+/* Center the form on the page */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('{{ url_for('static', filename='back.jpg') }}') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Form Box Styling */
+.form-box {
+    background: rgba(128, 128, 128, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+    min-height: 300px;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+    color: #80ffdb;
+}
+
+/* Form Inputs and Labels */
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #80ffdb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    color: #333;
+}
+
+.btn-primary:hover {
+    background-color: #66d9c2;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}

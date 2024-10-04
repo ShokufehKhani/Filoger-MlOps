@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> {% block title %}{% endblock %} </title>
+  <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+  {% block head %}{% endblock %}
+</head>
+<body class="{% if request.endpoint == 'home' %}home{% endif %}">
+  <header>
+    <h1>CancerAI</h1>
+    <div class="nav-box"> 
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="{{url_for('user_input')}}">Cancer Recognition</a></li>
+          <li><a href="{{url_for('history')}}">History</a></li>
+          <li><a href="{{url_for('login')}}">Log in/Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>  
+  <main>
+    {% block content %}{% endblock %}
+    {% block script %}{% endblock %}
+  </main>
+</body>
+</html>

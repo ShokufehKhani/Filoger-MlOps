@@ -1,0 +1,72 @@
+/* result.css */
+
+/* Center the content on the page */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('{{ url_for('static', filename='back.jpg') }}') no-repeat center center fixed;
+    background-size: cover; 
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Result Box Styling */
+.result-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #80ffdb; 
+}
+
+/* Prediction Text */
+h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Explanation Text */
+p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #80ffdb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #66d9c2;
+}
