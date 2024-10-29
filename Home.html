@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %} House Price Prediction - Home Page {% endblock %}
+{% block head %}
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<!-- Stylesheet -->
+<link rel="stylesheet" href="/static/css/home.css" />
+{% endblock %}
+{% block content %}
+<section class="py-5">
+  <div class="container">
+    <h2>Welcome to House Price Prediction</h2>
+    <p class="lead text-justify mb-4">
+      Our House Price Prediction tool utilizes advanced machine learning algorithms to estimate property values in Tehran.
+      By analyzing key features such as area, number of rooms, and available amenities, we empower buyers and sellers 
+      to make informed decisions in the real estate market.
+    </p>
+    
+    <section class="py-5 bg-light">
+      <div class="container px-5">
+        <h3>Why Choose Our Prediction Tool?</h3>
+        <p class="lead text-justify">
+          Our platform provides cutting-edge technology designed to enhance the accuracy of property valuations.
+          Whether you're buying or selling, our tool offers insights that can significantly impact your decisions.
+        </p>
+
+        <div class="row py-4">
+          <div class="col-md-4">
+            <h5>Data-Driven Insights</h5>
+            <p class="text-justify pr-2">
+              Leveraging historical data and market trends, our model provides precise property valuations,
+              helping you understand the market better.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>User-Friendly Interface</h5>
+            <p class="text-justify pr-2">
+              Designed with simplicity in mind, our platform allows you to quickly input property details and receive instant results.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Comprehensive Analysis</h5>
+            <p class="text-justify pr-2">
+              Our prediction tool analyzes various property features, ensuring that you receive an accurate estimate based on your specific criteria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-5">
+      <div class="container">
+        <h3>How It Works</h3>
+        <p class="lead text-justify">
+          Our house price prediction process is simple and effective:
+        </p>
+
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item py-2">
+            <strong>Input Property Details:</strong> Users enter the relevant property information such as area, number of rooms, and amenities.
+          </li>
+          <li class="list-group-item d-block py-3">
+            <strong>Receive Instant Estimate:</strong> Our machine learning model quickly analyzes the input and provides an estimated price for the property.
+          </li>
+          <li class="list-group-item d-block py-3">
+            <strong>Make Informed Decisions:</strong> Utilize the estimated price to guide your buying or selling strategy effectively.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h3>Get Started with House Price Prediction</h3>
+        <p class="lead">
+          Ready to discover the value of your property? Explore our tool to get started on your real estate journey.
+        </p>
+        <p class="container d-flex justify-content-center">
+          <a href="{{ url_for('user_input') }}" class="btn btn-outline-secondary mx-2">Get Started with Prediction</a>
+        </p>
+      </div>
+    </section>
+  </div>
+</section>
+{% endblock %}
